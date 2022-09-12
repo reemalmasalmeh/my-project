@@ -1,0 +1,103 @@
+/*
+element selector
+p {}
+
+class selector
+.class {}
+
+id selector
+ #id {}
+
+
+
+.link {}
+
+h1{}
+*/
+
+
+
+ /*   
+ 
+ <link rel="stylesheet" href="index.css" />
+ 
+
+<style>
+p {
+  color: black;
+}
+</style>
+
+<p style="color: red;">hello</p>
+ */
+
+
+/* 
+
+<link rel="stylesheet" href="{index.html/assets/css/master.css  }" />
+
+*/
+
+
+/*
+
+<link rel="stylesheet" href="{index.html/source/css/main.css }" />
+
+
+*/
+
+
+
+
+/*
+
+._user-name {
+}   not valiad
+
+
+.-user-name {
+}   not valiad
+
+.1user-name {
+} valiad
+
+
+.@user-name {
+} valiad
+
+
+.user@name {
+} notvaliad
+
+._user10name {
+} not valiad
+
+
+.u {
+} not valiad
+/*
+
+
+/*
+
+.USERNAME {
+} bad
+
+
+.UserName {
+}good
+
+
+.user-name {
+} good
+
+
+.userName {
+} good
+
+
+.usernameprofile {
+} good
+
+
+/*
