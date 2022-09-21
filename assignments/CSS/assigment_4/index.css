@@ -1,22 +1,24 @@
 
-div span title{
-    color: red;
-   
+.title{
+    color:green;  
 }
-
-.span title{
-    color: blue;   
-}
-
 div p{ 
     color: green;   
 }
 
-div title{
-    color: green;   
+ .parent  .title {
+    color: blue;   
+}
+  .parent  .child {
+    color:green;    
 }
 
- .paragraph p{
+.parent .child .title{
+    color:red; 
+}
+
+
+  .paragraph  p{
 background-color:red;
 padding: 10px;
 display:block;
@@ -26,7 +28,7 @@ overflow: visible;
 }
 
 
-.paragraph1 p{
+.paragraph1  p{
     background-color:red;
     padding: 10px;
     display:block;
@@ -37,7 +39,7 @@ overflow: visible;
     }
 
 
-    .paragraph2 p{
+     .paragraph2 p{
         background-color:red;
         padding: 10px;
         display:block;
@@ -49,13 +51,14 @@ overflow: visible;
 
 
 
-        .paragraph3 p{
+         .paragraph3  p {
             background-color:red;
             padding: 10px;
             display:block;
             max-width:400px;
-            max-height:50px ;
-            overflow-y: hidden;
+            max-height:40px ;
+            overflow: hidden;
+    
            /* overflow: auto;*/
             }
 
@@ -64,19 +67,17 @@ overflow: visible;
 
 
 
-one.{
-
-color: red;
-
+.one{
+color: rgb(212, 212, 52);
 }
 
-two.{
+.two{
   
     color: rgb(51, 201, 54);
  
     }
 
- three.{
+ .three{
     
         color: rgb(34, 0, 255);
         
