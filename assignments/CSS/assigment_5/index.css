@@ -1,0 +1,68 @@
+.deny {
+background-color: aqua;
+color: rgb(237, 119, 202);
+text-shadow: 0 0 2px rgb(176, 66, 70);
+text-align: center;
+text-decoration-line: underline;
+}
+
+
+
+.one{
+background-color:white ;
+color: black;
+text-shadow: 2px 0 0 red , 2.5px 0 0 blue , 3px 0 0 blueviolet;
+
+}
+
+
+.one1{
+    text-transform:uppercase;
+}
+.two2{
+    text-transform: capitalize;
+}
+.three3{
+    text-transform: none;
+}
+
+
+
+.lorem{
+line-height: 15px;
+word-spacing: 1.7 px;
+line-break: normal;
+background-color: #eee;
+width: 300px;
+white-space: none;
+}
+
+
+.lorem1{
+    line-height: 15px;
+    word-spacing: 1.7 px;
+    line-break: normal;
+    background-color: #eee;
+    width: 300px;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    }
+    
+    
+.lorem2{
+    line-height: 15px;
+    word-spacing: 1.7 px;
+    line-break: normal;
+    background-color: #eee;
+    width: 300px;
+    white-space:nowrap;
+    overflow:hidden ;
+    text-overflow: ellipsis;
+    }
+
+.link{
+display:inline-block;
+background-color: rgb(43, 195, 226);
+padding: 10px;
+}

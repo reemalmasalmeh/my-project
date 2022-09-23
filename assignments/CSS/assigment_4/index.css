@@ -57,7 +57,7 @@ overflow: visible;
             display:block;
             max-width:400px;
             max-height:40px ;
-            overflow: hidden;
+            overflow:hidden;
     
            /* overflow: auto;*/
             }
