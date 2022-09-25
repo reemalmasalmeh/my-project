@@ -1,0 +1,113 @@
+/*.parent div {
+    text-align: center;
+    padding-bottom: 20px;
+    background-color: #EEE;
+    padding-top: 20px;
+    display: block;
+    float: left;
+    width:calc(100%/5);
+    }
+
+    .parent{
+background-color:cornflowerblue ;
+padding: 10px;
+overflow: hidden;
+display: block;
+    }
+
+.div{
+  float: left;  
+} */
+
+
+body{
+  margin: 0;  
+}
+
+.full{
+text-align: center;
+background-color:#EEE ;
+padding: 10px;
+overflow: hidden;
+display: block;
+width:100%;
+}
+
+
+
+.parent div {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #EEE;
+    overflow: hidden;
+    display: inline-block;
+    width:calc(96%/3);
+    }
+
+
+    .parent1 div {
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        background-color: #EEE;
+        overflow: hidden;
+        display: inline-block;
+        width:calc(97%/2);
+        }
+    
+    
+    
+
+        .parent2 div {
+            text-align: center;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            background-color: #EEE;
+            overflow: hidden;
+            display: inline-block;
+            width:calc(95%/4);
+            }
+    
+    
+             .normal{
+                margin: 20px auto;
+                width: 300px;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 20px; 
+                background-color: rgba(238, 238, 238, 550); /* Get The Background From Image */
+                color: black;
+                border: 2px solid  rgba(238, 238, 238, 0.244);
+                opacity: 1;
+              }
+
+              .one{
+
+                margin: 20px auto;
+                width: 300px;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 20px; 
+                background-color:rgba(238, 238, 238, 500) ; /* Get The Background From Image */
+                color: black;
+                border: 2px solid #eee;
+                opacity: 0.5;
+
+              }
+
+              
+              .two{
+
+                margin: 20px auto;
+                width: 300px;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 20px; 
+                background-color: rgba(238, 238, 238, 0.929); /* Get The Background From Image */
+                color: black;
+                border: 2px solid #eee;
+                opacity: 0.1;
+
+              }
+

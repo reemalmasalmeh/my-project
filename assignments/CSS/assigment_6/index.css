@@ -1,0 +1,66 @@
+ .deny {
+text-align: center;
+padding: 20px;
+font-size: medium;
+background-color: #EEE;
+border: 2px solid red;
+}
+div p{
+padding: inherit;
+    border: inherit; 
+}
+
+.deny1 {
+    text-align: center;
+    padding: 20px;
+    font-size: medium;
+    background-color: #EEE;
+    border: 2px solid blueviolet;
+    }
+    .deny p{
+    
+        border: inherit;  
+       padding: inherit;
+    }
+   
+.withser h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font: weight 300px; 
+    font-style: italic;
+}
+
+.withoutser h2{
+    font-family:'Times New Roman', Times, serif ;
+    font-weight: 700;
+}
+.withoutser h3{
+font-family:'Courier New', Courier, monospace;
+font-weight: 400;
+}
+
+
+    .withser,
+    .withoutser,
+    .withoutser1,
+    h6,
+    h4,
+    h5
+    {
+        background-color: #ddd;
+        padding: 20px;
+        
+    }
+
+
+h6{
+font-size: 2.5em;
+}
+
+h5{
+    font-size: 2em;
+    }
+
+    
+h4{
+    font-size: 1.5em;
+    }
