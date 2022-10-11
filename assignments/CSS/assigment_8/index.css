@@ -108,21 +108,21 @@ margin: 10px;
 top: 0;
 left: 0;
 border-right:  solid red;
-}
+ }
 
 
-.bottom-left{
+ .bottom-left{
  padding: 10px;
  background-color: rgb(0, 204, 255);
-position: absolute;
-margin: 10px;
-bottom: 550px;
-left: 0;
-border-right:  solid red
+  position: absolute;
+ margin: 10px;
+ bottom: 550px;
+ left: 0;
+ border-right:  solid red
     }
 
     
-.top-right{
+ .top-right{
     padding: 10px;
     background-color: rgb(0, 204, 255);
     position: relative;
@@ -133,7 +133,7 @@ border-right:  solid red
     }
 
 
-.bottom-right{
+ .bottom-right{
     padding: 10px;
     background-color: rgb(0, 204, 255);
     position: relative;
@@ -150,29 +150,27 @@ border-right:  solid red
         border: 1px solid black;
     }
 
-.html,
-.css,
-.javascript,
-li
-{
+ .html,
+ .css,
+ .javascript,
+ li{
  background-color:#eee;
  width: 100%;
  border:  1px solid white;
  display: table;
-}
+ }
 
 
-.part1{
+ .partone{
     width: 400px;
-   
     }
 
 
-td{
+ td{
    background-color: white; 
    border: solid white;
-}
+ }
 
-ol{
+ ol{
     list-style-type: decimal;
 }
