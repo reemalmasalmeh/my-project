@@ -28,15 +28,19 @@ left: 500px;
             height: 200px;
             position: relative;
             left: 500px;
-            }
-            */
+   
+     }      
+       */
+
+
+
+/*
 div{
-position: absolute;
+position:absolute;
 width: 500px;
 height: 300px;
+
 }
-
-
 
 
 .black{
@@ -65,15 +69,69 @@ height: 300px;
 }
 
 
-
 .red{
     background-color:red;
     left: 40px;
     top: 40px;
     z-index: 10;
 }
+*/
 
 .our{
 background-color: #eee;
-text-decoration: dashed;
+padding: 20px;
+width: 400px;
+margin:20px;
+border-top:  solid red;
+border-bottom:  solid red;
+border-right:  solid rgb(0, 170, 255);
+border-left:  solid rgb(0, 153, 255);
+
 }
+
+
+.top-left{
+padding: 10px;
+background-color: rgb(0, 204, 255);
+position: absolute;
+margin: 10px;
+top: 0;
+left: 0;
+border-right:  solid red;
+}
+
+
+.bottom-left{
+ padding: 10px;
+ background-color: rgb(0, 204, 255);
+position: absolute;
+margin: 10px;
+bottom: 550px;
+left: 0;
+border-right:  solid red
+    }
+
+    
+.top-right{
+    padding: 10px;
+    background-color: rgb(0, 204, 255);
+    position: relative;
+    margin: 10px;
+   top: 36px;
+   right: -170px;
+   border-left:  solid red
+    }
+
+
+.bottom-right{
+    padding: 10px;
+    background-color: rgb(0, 204, 255);
+    position: relative;
+    margin: 10px;
+    bottom:90px ;
+    left: 110px;
+    border-left:  solid red
+
+    }
+
+
