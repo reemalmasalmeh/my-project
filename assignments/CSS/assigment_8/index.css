@@ -170,3 +170,7 @@ border-right:  solid red;
    background-color: white; 
    border: solid white;
  }
+
+ ol{
+    list-style-type: decimal;
+}
