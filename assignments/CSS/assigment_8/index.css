@@ -152,14 +152,31 @@ border-right:  solid red;
 
  .html,
  .css,
- .javascript,
- li{
+ .javascript
+ {
  background-color:#eee;
  width: 100%;
  border:  1px solid white;
- display: table;
+ display: table;}
+
+
+
+
+ .html >li,
+ .css >li,
+ .javascript >li
+ {
+ background-color:#eee;
+ 
  }
 
+
+
+ li{
+
+    background-color:white; 
+    margin: 10px;
+ }
 
  .partone{
     width: 400px;
@@ -172,6 +189,59 @@ border-right:  solid red;
  }
 
  ol{
-    list-style-type: decimal;
     background-color: #eee;
 }
+.olcss{
+list-style-type:lower-latin;
+
+}
+
+table{
+width: 700px;
+border: solid rgba(255, 255, 255, 0.669) 1px;
+border-spacing: 2px;
+}
+
+head{
+padding: 10px;
+border: solid 1px grey;
+color: white;
+}
+
+
+caption{
+    background-position:center ;
+}
+
+
+ .v{
+    background-color: rgb(0, 213, 255);
+    color: white;
+    padding: 8px;
+    border: white;
+    cursor: pointer;
+}
+
+
+
+.d {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    padding: 8px;
+    border: white;
+    cursor: pointer;
+}
+
+th{
+    background-color: black;
+    color: white;  
+    border: 10px solid black;
+    padding: 15px;
+    font-size:x-large;
+  }
+
+ table td{
+    
+    vertical-align: inherit;
+    border: #eee solid 1px;
+ }
