@@ -1,0 +1,78 @@
+/*a=link*/
+a{
+    text-decoration: none;
+     /*يعني شكل اللينك انو بكون تحتو خط لاعرف انو لينك بشيلو مشان الون اللينك متل ما بدي*/
+     color: red; 
+}
+
+a:hover {
+color: green;
+/*يعني انا اخترت لون اللينك اللي بدي اياه وخلصت بس بدي لما اكبس على اللينك يتغير لونو بحط الشي المزيف اللي اسمو هوفر*/ 
+}
+
+.check:checked +label{
+color: red;
+/*لما انا احط خيارات وبجنبهن مربع لاختار اذا اخترت الخيار الفلاني يتغير لونو للون الفلاني */
+/*display: none; */
+/*او لما اختار هاد العنصر اخفيلي زر الاختيار */ 
+border: 2px blue solid;
+}
+
+.check:focus{
+border-color: red;
+outline: none;
+}
+
+
+a:visited {
+    color:blue;
+}
+
+.one{
+    background-color: #eee;
+    border: solid #eee 1px;
+    height: 60px;
+    width: 300px;
+    padding-top: 30px;
+    
+}
+
+
+.empty{
+    background-color: red;
+    border: solid red 1px;
+    height: 60px;
+    width: 300px; 
+    padding-top: 30px;
+}
+
+
+.three{
+    background-color: #eee;
+    border: solid #eee 1px;
+    height: 60px;
+    width: 300px;
+    padding-top: 30px;
+   
+}
+
+.hello{
+background-color: gray;
+border: solid gray 1px;
+height: 60px;
+width: 300px;
+position:absolute;
+right: 50%;
+padding-top: 10px;
+padding-right: 50px;
+
+
+}
+ .hello span{
+   display:inline; 
+   font-size: 40px;
+   background-color: red;
+   border: solid red 10px;
+   border-top: 230px;
+   border-left: -19px;
+}
