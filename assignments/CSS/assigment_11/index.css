@@ -1,0 +1,96 @@
+.parent{
+    background-color: #ddd;
+    width: 500px;
+    height: 100%;
+    border: solid #ddd 10px;
+    padding: 50px;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    transition-property: margin-bottom;
+    
+
+}
+
+.parent:hover{
+    margin-bottom: 50px;
+}
+
+
+.one{
+    background-color:#ddd ;
+    width: 400px;
+    height: 100%;
+    border: solid #ddd 10px;
+    font-size: x-large;
+    font-weight: bolder;
+    padding: 50px;
+    margin: 10px;
+    margin-left: 10px;
+   
+}
+
+
+.two{
+    background-color:#eee ;
+    width: 400px;
+    height: 100%;
+    border: solid #eee 10px;
+    padding: 50px;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-left: 10px;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+    transition-property: margin-top;
+    margin-top:20px ;
+
+}
+.two:hover{
+
+    margin-top: 50px;
+}
+
+.elzero{
+    background-color: #eee !important;
+    border: solid #eee !important;
+    margin-top: 20px;
+
+}
+
+ .elementone {
+     background-color: white;
+     border: var(--borderColor);
+     margin: 50px;
+     padding: var(--mainPadding);
+     color:  var(--mainColor) ;
+     font-weight: bold;
+     font-size: x-large;
+}
+
+.elementtwo{
+    background-color: white;
+     border:  var(--borderColor);
+     margin: 50px;
+     padding: var(--mainPadding); 
+     color: var(--mainColor) ;
+     font-weight: bold;
+     font-size: x-large;
+}
+
+.elementthree{
+    background-color: white;
+    border:  var(--borderColor);
+    margin: 50px;
+    padding: var(--mainPadding);
+    color:var(--mainColor) ;
+    font-weight: bold;
+    font-size: x-large;
+} 
+
+
+:root {
+    --mainColor: red;
+    --mainPadding: 10px;
+    --borderColor: solid 2px black;
+  }
+  
