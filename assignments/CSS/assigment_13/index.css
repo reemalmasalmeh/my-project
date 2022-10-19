@@ -1,0 +1,88 @@
+
+.ana{
+    background-color: #eee;
+    width: 600px;
+    height: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    }
+    
+    :root .ana{
+    --box1color: rgb(51,167,181);
+    --box1width:150px;
+    --box1height:50px;
+    --box1padding:10px;
+    --box1margin:10px;
+    --color1:white;
+    --font1weight:bold;
+    --font1size:x-large;
+    --text1align: center;
+    }
+    
+    .bir{
+        background-color: var(--box1color);
+       width: var(--box1width);
+       height: var(--box1height);
+       color: var(--color1);
+       font-weight: var(--font1weight);
+       font-size: var(--font1size);
+       text-align: var(--text1align);
+    }
+    
+    
+    .iki{
+        background-color: var(--box1color);
+       width: var(--box1width);
+       height: var(--box1height);
+       color: var(--color1);
+       font-weight: var(--font1weight);
+       font-size: var(--font1size);
+       text-align: var(--text1align);
+    }
+    
+    .uc{
+        background-color: var(--box1color);
+       width: var(--box1width);
+       height: var(--box1height);
+       color: var(--color1);
+       font-weight: var(--font1weight);
+       font-size: var(--font1size);
+       text-align: var(--text1align);
+    }
+    
+    
+    .dort{
+        background-color: var(--box1color);
+       width: var(--box1width);
+       height: var(--box1height);
+       color: var(--color1);
+       font-weight: var(--font1weight);
+       font-size: var(--font1size);
+       text-align: var(--text1align);
+    }
+    
+    .bes{
+        background-color: var(--box1color);
+       width: var(--box1width);
+       height: var(--box1height);
+       color: var(--color1);
+       font-weight: var(--font1weight);
+       font-size: var(--font1size);
+       text-align: var(--text1align);
+       flex-direction: column-reverse;
+    }
+    
+    .alti{
+        background-color: var(--box1color);
+       width: var(--box1width);
+       height: var(--box1height);
+       color: var(--color1);
+       font-weight: var(--font1weight);
+       font-size: var(--font1size);
+       text-align: var(--text1align);
+       flex-direction: column-reverse;
+    }
+    
