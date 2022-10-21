@@ -93,4 +93,14 @@
     --mainPadding: 10px;
     --borderColor: solid 2px black;
   }
-  
+  .elzero{
+color: transparent !important;
+text-align: center;
+  }
+  .elzero::before{
+    content: "Elzero";
+    color:black;
+    font-weight: bold;
+    font-size: x-large;
+    
+  }

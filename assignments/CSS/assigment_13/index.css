@@ -1,88 +1,84 @@
+/*
+img{
+transition: 0.3s;
+filter: grayscale(50%);    her zaman filter degisiyor renk olarak
+filter: blur(4px);    her zaman filter degisiyor sis oluyor
+filter:invers(4px);    her zaman fotograf renkleri tersi oluyor
+}
 
-.ana{
-    background-color: #eee;
+img:hover{
+    filter: grayscale(100%);   sadece basarsak filter degisiyor
+    gecen filterler kullanabiliriz basarsak gerceklesir hover da 
+}
+
+ div{
+    background-image: linear-gradient(to right, red, blue);
+    burda biz renklerimn gitmesi hangi yonden ve hangi renkler belirtliyoruz
+ }
+ 
+ */
+
+ .first{
+    background-color: #ddd;
     width: 600px;
-    height: 300px;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    }
-    
-    :root .ana{
-    --box1color: rgb(51,167,181);
-    --box1width:150px;
-    --box1height:50px;
-    --box1padding:10px;
-    --box1margin:10px;
-    --color1:white;
-    --font1weight:bold;
-    --font1size:x-large;
-    --text1align: center;
-    }
-    
-    .bir{
-        background-color: var(--box1color);
-       width: var(--box1width);
-       height: var(--box1height);
-       color: var(--color1);
-       font-weight: var(--font1weight);
-       font-size: var(--font1size);
-       text-align: var(--text1align);
-    }
-    
-    
-    .iki{
-        background-color: var(--box1color);
-       width: var(--box1width);
-       height: var(--box1height);
-       color: var(--color1);
-       font-weight: var(--font1weight);
-       font-size: var(--font1size);
-       text-align: var(--text1align);
-    }
-    
-    .uc{
-        background-color: var(--box1color);
-       width: var(--box1width);
-       height: var(--box1height);
-       color: var(--color1);
-       font-weight: var(--font1weight);
-       font-size: var(--font1size);
-       text-align: var(--text1align);
-    }
-    
-    
-    .dort{
-        background-color: var(--box1color);
-       width: var(--box1width);
-       height: var(--box1height);
-       color: var(--color1);
-       font-weight: var(--font1weight);
-       font-size: var(--font1size);
-       text-align: var(--text1align);
-    }
-    
-    .bes{
-        background-color: var(--box1color);
-       width: var(--box1width);
-       height: var(--box1height);
-       color: var(--color1);
-       font-weight: var(--font1weight);
-       font-size: var(--font1size);
-       text-align: var(--text1align);
-       flex-direction: column-reverse;
-    }
-    
-    .alti{
-        background-color: var(--box1color);
-       width: var(--box1width);
-       height: var(--box1height);
-       color: var(--color1);
-       font-weight: var(--font1weight);
-       font-size: var(--font1size);
-       text-align: var(--text1align);
-       flex-direction: column-reverse;
-    }
-    
+    height: 100px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    margin-left: 300px;
+    position: relative;
+    border: 10px solid transparent;
+    border-image: linear-gradient(90deg, red , blue, green,rgb(196, 32, 59));
+    border-image-slice: 1;
+   
+ }
+
+ .Elzero{
+    background-color: #ddd;
+    width: 600px;
+    height: 100px;
+    padding: 20px;
+    color: black;
+    text-align: center;
+    margin-left: 300px;
+    position: relative;
+ }
+
+
+ .Elzero::before{
+    content: "";
+     background-image: linear-gradient(
+    red 100%, blue 0%);
+    height: 20px;
+    position: absolute;
+    width: 100%;
+    top: 120px;
+    left: 0;
+
+
+ }
+
+ .two{
+    background-color: #ddd;
+    width: 600px;
+    height: 100px;
+    padding: 20px;
+    text-align: start;
+    margin-left: 300px;
+    position: relative;
+    margin-top: 10px;
+    color: gray;
+ }
+
+
+ .three{
+    background-color: #ddd;
+    width: 600px;
+    height: 100px;
+    padding: 20px;
+    text-align: start;
+    margin-left: 300px;
+    position: relative;
+    margin-top: 10px;
+    color: gray;
+ }

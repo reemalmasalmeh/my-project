@@ -1,0 +1,115 @@
+.grid
+{
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    justify-items: center;
+    align-items: center;
+    margin-left: 200px;
+}
+
+:root .grid{
+--backgroundcolor:rgb(169,184,195);
+--width: 200px;
+--height: 10px;
+--padding: 10px;
+--textalign: center;
+--color:white;
+--fontweight: bold;
+}
+
+.one{
+    background-color:var(--backgroundcolor) ; 
+    width:var(--width) ; 
+    height:var(--height) ;
+    padding:var(--padding) ;
+    text-align:var(--textalign) ;
+    color: var(--color);
+    font-weight: var(--fontweight);
+  }
+  
+ .two{
+    background-color:var(--backgroundcolor) ; 
+    width:var(--width) ; 
+    height:var(--height) ;
+    padding:var(--padding) ;
+    text-align:var(--textalign) ;
+    color: var(--color);
+    font-weight: var(--fontweight);
+
+  }
+  
+  
+.three{
+
+    background-color:var(--backgroundcolor) ; 
+    width:var(--width) ; 
+    height:var(--height) ;
+    padding:var(--padding) ;
+    text-align:var(--textalign) ;
+    color: var(--color);
+    font-weight: var(--fontweight);
+
+}
+
+.four{
+    background-color:var(--backgroundcolor) ; 
+    width:var(--width) ; 
+    height:300px;
+    padding:var(--padding) ;
+    text-align:var(--textalign);
+    color: var(--color);
+    font-weight: var(--fontweight);
+
+}
+
+.five{
+
+    background-color:var(--backgroundcolor) ; 
+    width:var(--width) ; 
+    height:300px ;
+    padding:var(--padding);
+    text-align:var(--textalign);
+    color: var(--color);
+    font-weight: var(--fontweight);
+
+}
+
+.six{
+    background-color:var(--backgroundcolor); 
+    width:var(--width); 
+    height:300px;
+    padding:var(--padding);
+    text-align:var(--textalign);
+    color: var(--color);
+    font-weight: var(--fontweight);
+
+}
+.layout{
+        background-color: #ddd;
+        height: 100vh;
+        display:grid;
+        margin-left: 300px;
+        grid-template-columns:repeat(10,1fr);
+        grid-template-rows: 50px auto 50px;
+    grid-area:"head head head head head head head head head head " "foot foot foot foot foot foot foot  foot foot"
+    ;
+}
+header{
+    grid-area: head;
+    background-color:cornflowerblue;
+    color:white;
+    
+}
+footer{
+   
+    background-color:rgb(0,208,130);
+    padding:5px ;
+    width: 100%;
+    height: 25px; 
+    margin-top: 50px;
+
+}
