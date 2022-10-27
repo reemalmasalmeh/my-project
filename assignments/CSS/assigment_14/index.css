@@ -151,8 +151,13 @@ footer{
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: auto auto;
     gap: 10px 10px;
-    margin-left: 200px;
     text-align: center;
+    justify-content:start ;
+    align-items: right;
+    margin: 20px;
+    margin-left: 200px;
+    justify-content:center;
+    align-content:center;
   }
 
   :root .gridone{
@@ -168,6 +173,7 @@ footer{
     width:10px ;
     height:300px ;
     text-align: var(--textalign1);
+    /*grid-row: span 3;*/ /*نختار من خلالها ان العنصر الواحد كم عمود ياخد */
 }
 
 .two{
@@ -176,8 +182,7 @@ footer{
     width:200px ;
     height:300px ;
     text-align: var(--textalign1);
-    
-    
+   
 }
 
 
@@ -232,44 +237,193 @@ footer{
     margin-left: 150px;
 }
 
-.gridtwo{
-    background-color: #ddd;
-    display: grid;
-    padding: 20px;
-    width: 800px;
-    height: 400px;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: auto auto;
-    gap: 10px 10px;
-    margin-left: 200px;
-    text-align: center;
-    position: relative;
-  }
 
-:root .gradtwo{
+    
+.gridtwo{
+        background-color: #ddd;
+        width: 800px;
+        height: 400px;
+        margin: 20px auto;
+        display: grid;
+        gap: 10px 10px;
+        /*grid-template-rows: repeat(auto-fill,minmax(200px,1fr))/*يعنيي بتشتغل على حسب المساحة المتاحة في الصفحة حسب جوال او حاسوب*/
+        grid-template-rows: repeat(4,auto);
+        grid-template-columns: repeat(2,auto);
+        align-content: flex-start;
+        margin-left: 200px; 
+    }
+   
+   
+  
+
+
+:root .gridtwo{
    --background-color2: rgb(255, 0, 132);
     --text-align2: center;
-    --width2: 50px;
-    --height2:100px;
+  
+
+
+
 }
 .onee{
     background-color: var(--background-color2);
     text-align: var(--text-align2);
-     width: var(--width2);
-     height: var(--height2);
+    margin-bottom: 330px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
     
 }
 
 .twoo{
     background-color: var(--background-color2);
     text-align: var(--text-align2);
-     width: var(--width2);
-     height: var(--height2);
+    margin-bottom: 330px;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
 }
 
 .threee{
     background-color: var(--background-color2);
     text-align: var(--text-align2);
-     width: var(--width2);
-     height: var(--height2);
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
 }
+
+
+.fourr{
+    background-color: var(--background-color2);
+    text-align: var(--text-align2);
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+}
+
+
+.task4{
+        background-color: #ddd;
+        display: grid;
+        padding: 20px;
+        width: 800px;
+        height: 400px;
+        margin-left: 200px;
+        grid-template-columns: repeat(8,1fr);
+        grid-template-rows: repeat(8,auto);
+        gap: 10px 10px;
+        
+    
+
+}
+:root .task4{
+    --background4color:rgb(0, 90, 150) ;
+    --col4or: white;
+    --font4size: x-large;
+    --font4weight: bold;
+    --text4align: center;
+
+}
+
+.onetask4{
+background-color: var(--background4color);
+color: var(--col4or);
+font-size: var(--font4size);
+width: auto;
+height: 50px;
+text-align: var(--text4align);
+grid-column-start: 1;
+grid-row-start: 7;
+grid-column-end: 8;
+grid-row-end: 7;
+
+}
+
+
+.twotask4{
+    background-color: var(--background4color);
+    color: var(--col4or);
+    font-size: var(--font4size);
+    text-align: center;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-column-end: 5;
+    grid-row-end: 2;
+}
+
+
+    
+  .threetask4{
+    background-color: var(--background4color);
+    color: var(--col4or);
+    font-size: var(--font4size);
+    text-align: center;
+    grid-column-start:5 ;
+    grid-row-start:2 ;
+    grid-column-end:8 ;
+    grid-row-end:2 ;
+}
+    
+
+    .fourtask4{
+        background-color: var(--background4color);
+        color: var(--col4or);
+        font-size: var(--font4size);
+        text-align: center;
+        grid-column-start:1 ;
+        grid-row-start:3 ;
+        grid-column-end: 3;
+        grid-row-end:3 ;
+        
+        }
+
+
+        .fivetask4{
+            background-color: var(--background4color);
+            color: var(--col4or);
+            font-size: var(--font4size);
+            text-align: center;
+            grid-column-start: 3;
+            grid-row-start: 3;
+            grid-column-end: 8;
+            grid-row-end: 7;
+            }
+    
+            .sixtask4{
+                background-color: var(--background4color);
+                color: var(--col4or);
+                font-size: var(--font4size);
+                text-align: center;
+                grid-column-start: 1;
+               grid-row-start: 4;
+               grid-column-end: 3;
+                grid-row-end: 5;
+
+}
+
+            
+             .seventask4{
+            background-color: var(--background4color);
+            color: var(--col4or);
+            font-size: var(--font4size);
+            text-align: center;
+            grid-column-start: 1;
+            grid-row-start: 5;
+            grid-column-end: 3;
+             grid-row-end: 7;
+        }
+            
+        .eighttask4{
+        background-color: var(--background4color);
+        color: var(--col4or);
+        font-size: var(--font4size);
+        width: auto;
+        height: 50px;
+        text-align: center;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        grid-column-end: 8;
+        grid-row-end: 1;
+    }
+        
+        
