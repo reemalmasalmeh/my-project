@@ -1,0 +1,15 @@
+ .main-red  {
+    color: red;
+}
+ p{
+    color: black;
+}
+.parent >child {
+    color: red;
+}
+.parent1 :last-child{
+    color: red;
+}
+div:nth-last-child(4){
+    color: red;
+}

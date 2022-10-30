@@ -1,0 +1,15 @@
+
+@media print {
+    assign-one > div {
+    font-size: 40px;
+      }
+}
+
+.parent{
+    background-color: #eee;
+    padding: 100px;
+    margin: 20px;
+}
+.pro1{
+
+}
