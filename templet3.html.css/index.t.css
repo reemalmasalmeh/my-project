@@ -1,0 +1,30 @@
+
+:root{
+    --maincolor:#2196F3;
+    --main2coloraiternative:#1787e0;
+}
+
+head{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "cairo";
+}
+
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
