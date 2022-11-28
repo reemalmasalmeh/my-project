@@ -32,7 +32,7 @@ ul{
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 750px;
+    
 }
 
 
@@ -91,22 +91,28 @@ position: relative;
 }
 
 
-.header .main-nav > li > a{
+.header .main-nav {
+    display: flex;
+    
+}
+.header .main-nav  > li:hover .mega-menu {
+opacity: 1;
+z-index: 100;
+top: calc(100% + 1px);
+}
+
+.header .main-nav > li > a {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 73px;
-    position: relative;
+    position:relative;
     color: black;
     padding: 0 30px;
     transition: var(--maintransition);
     overflow: hidden;
 }
 
-.header .main-nav {
-    display: flex;
-    
-}
 
 
 @media (max-width:768px) {
@@ -123,6 +129,7 @@ position: relative;
     height: 4px;
     top: 0;
     left: -100%;
+    transition: var(--maintransition);
     
 }
 
@@ -141,15 +148,22 @@ position: relative;
 
 .header .main-nav > li > a:hover::before{
     left: 0;
-    transition: var(--maintransition);
-}
-.header .mega-menu{
-position: absolute;
+  
 }
 
-.header .mega-menu .img{
-    max-width: 100%;
-   
+header .mega-menu{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 20px;
+    background-color: white;
+    border-bottom: solid 3px var(--backgroundcolor);
+    z-index: -1;
+    top: calc(100% + 50px);
+    display: flex;
+    gap: 40px;
+    transition: top var(--maintransition) , opacity var(--maintransition);
+
 }
 /*end header*/
 
@@ -161,9 +175,9 @@ position: absolute;
     
     }
 
-.landing{
+.landing {
     position: relative;
-    background-color: var(--backgroundcolor2);
+  
 }
 
 .landing::before{
@@ -173,22 +187,23 @@ width:100% ;
 height:100%;
 background-color: #ddd;
 z-index: -1;
-transform: skewY(-2deg);
-top: 95%;
+transform: skewY(-6deg);
+top: -40px;
 left: 0;
 transform-origin: top left;
-
+z-index: -1;
 }
 
 .landing .container{
 display: flex;
 align-items: center;
-padding-bottom: 100px;
-min-height: calc(100%-73px);
+padding-bottom: 120px;
+min-height: calc(100vh - 73px);
 }
+
 .landing .text{
     flex: 1;
-    align-items: center;
+    
 }
 @media (max-width:991px){
 .landing .text  {
@@ -196,7 +211,7 @@ min-height: calc(100%-73px);
 }
 }
 
-.landing h1{
+.landing .text h1{
 font-size: xx-large;
 letter-spacing: 2px;
 font-weight: bold;
@@ -207,9 +222,9 @@ font-weight: bold;
         font-size: 30px;
     }
 }
-.landing p{
+.landing .text p{
     font-size:large;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 @media (max-width:991px){
@@ -224,67 +239,85 @@ font-weight: bold;
         font-size: 30px;
     }
 }
-.landing .image img{
+.landing .image img {
 width: 600px;
 animation: up-and-down 5s linear infinite;
-display: flex;
-position:absolute;
-right:10px;
-bottom: -150px;
-
+position:relative;
 }
 
 
-.landing .image::before{
-    
-}
-
-@media(max-width:991){
+@media(max-width:991) {
 .landing .image{
     display: none;
     
 }
+
 }
 .landing .go-down {
 color: var(--maincolor);
 position: absolute;
-bottom: -100%;
+bottom:30px;
 left: 50%;
 transform:translateX(-50%);
 transition: var(--maintransition2);
-
 }
 
 
 .landing .go-down :hover {
-    color: var(--maincolor);
-   
+    color: var(--maincolor);  
 }
-
-
-.landing .go-down .i {
+.landing .go-down i {
 animation: bouncing 1.5s infinite;
 }
-
-  
-
-
 /*end landing*/
 /*start animation*/
-@keyframes up_and_down {
-    0%, 100% {
-        top:0;
+@keyframes up-and-down {
+    0%, 
+    100% {
+        top: 0;
     }
-    50%{
+    50% {
         top: -50px;
     }
 }
-@keyframes bouncing{
-    0%, 10%, 20%, 50% , 80%, 100%{
+@keyframes bouncing {
+    0%, 
+    10%, 
+    20%, 
+    50%, 
+    80%, 
+    100% {
         transform: translateY(0);
     }
-    40%, 60% {
-        transform: translateY(-20px);
+    40%,
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes left-move {
+    50% {
+        left: 0;
+        width: 12px;
+        height: 12px;
+    }
+    100% {
+        left: 0;
+        border-radius: 0;
+        width: 50%;
+        height: 100%;
+    }
+}
+
+@keyframes moving-arrow{
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+@keyframes flashing{
+    100% {
+        transform: translateX(10px);
     }
 }
 /*end animation*/
