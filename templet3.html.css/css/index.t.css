@@ -101,6 +101,13 @@ z-index: 100;
 top: calc(100% + 1px);
 }
 
+
+.header .main-nav > li:hover .mega-menu {
+    opacity: 1;
+    z-index: 100;
+    top: calc(100% + 1px);
+ }
+ 
 .header .main-nav > li > a {
     display: flex;
     justify-content: center;
@@ -112,7 +119,6 @@ top: calc(100% + 1px);
     transition: var(--maintransition);
     overflow: hidden;
 }
-
 
 
 @media (max-width:768px) {
@@ -146,12 +152,12 @@ top: calc(100% + 1px);
     background-color: #ddd;
 }
 
-.header .main-nav > li > a:hover::before{
+ .header .main-nav > li > a:hover::before{
     left: 0;
   
 }
 
-header .mega-menu{
+.header .mega-menu {
     position: absolute;
     width: 100%;
     left: 0;
@@ -159,12 +165,75 @@ header .mega-menu{
     background-color: white;
     border-bottom: solid 3px var(--backgroundcolor);
     z-index: -1;
-    top: calc(100% + 50px);
+    top: 60px;
     display: flex;
     gap: 40px;
-    transition: top var(--maintransition) , opacity var(--maintransition);
-
+    opacity: 0;
+    transition: top var(--maintransition), opacity var(--maintransition);
 }
+
+
+
+.header .mega-menu .image img{
+    max-width: 100%;
+}
+
+@media (max-width:991px){
+    .header .mega-menu .image {
+        display: none;
+    }
+}
+
+@media (max-width:767px) {
+    .header .mega-menu {
+    flex-direction: column;
+    gap: 0;
+    padding: 5px;
+    }
+}
+.header .mega-menu .links {
+    min-width: 220px;
+    flex: 1;
+}
+
+.header .mega-menu .links li {
+    position: relative;
+}
+
+.header .mega-menu .links li::before {
+content: "";
+position: absolute;
+left: 0;
+top: 0;
+width: 0;
+height: 100%;
+background-color: #FAFAFA;
+z-index: -1;
+transition: var(--maintransition2);
+}
+.header .mega-menu .links li:not(:last-child){
+border-bottom: #e9e9e9 solid 1px;
+}
+.header .mega-menu .links li:hover:before {
+    width: 100%;
+}
+@media (max-width:767px){
+    .header .mega-menu .links:first-of-type :last-child{
+    border-bottom: #e9e9e9 solid 1px;
+}
+}
+.header .mega-menu .links li a {
+    color: var(--maincolor);
+    padding: 15px;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header .mega-menu .links li a i {
+    margin-right: 10px;
+}
+
 /*end header*/
 
 /*start landing*/
@@ -246,7 +315,7 @@ position:relative;
 }
 
 
-@media(max-width:991) {
+@media(max-width:991px) {
 .landing .image{
     display: none;
     
