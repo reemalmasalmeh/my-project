@@ -471,26 +471,48 @@ font-weight: bold;
 
 /*end artical*/
 /*start gallery*/
-
 .gallery {
-    padding-top: var(--mainpaddingtop) ;
-    padding-bottom: var(--mainpaddingbottom);
-    position: relative;
-    
-    }
+padding-top: var(--mainpaddingtop) ;
+padding-bottom: var(--mainpaddingbottom);
+position: relative;
+background-color: #e6e6e7;
+}
+
 .gallery .container {
-
-
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
 }
 .gallery .box {
-
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 12px 20px 0 rgd(0 0 0 / 13%), 0 2px 4px 0 rgd (0 0 0 / 12%);;
+}
+.gallery .box .image{
+    position: relative;
+    overflow: hidden;
+}
+.gallery .box .image::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.gallery .box .image:hover::before {
+    animation: flashing 0.7s;
 }
 .gallery .box img {
-
+    max-width: 100%;
+    transition: var(--maintransition);
 }
-
-
-
+.gallery .box .image:hover img {
+    transform: rotate(5deg) scale(1.1) ;
+}
 
 /*end gallery*/
 /*start animation*/
