@@ -574,10 +574,7 @@ background-color: white;
     font-size: 40px;
     margin: auto;
     width: fit-content;
-
-
 }
-
 
 .features .box h3::after {
     content: "";
@@ -587,19 +584,15 @@ background-color: white;
     height: 5px;
     background-color: var(--maincolor);
     width: 100%;
-  
-
 }
+
 .features .box p {
     line-height: 2;
     font-size: 20px;
     margin: 30px 0;
     padding: 25px;
     color: #777;
-
-
 } 
-
 
 .features .box a {
    display: block;
@@ -610,21 +603,71 @@ background-color: white;
    font-weight: bold;
    padding: 10px 20px;
    color: var(--maincolor);
-  
-
 } 
 
 .features .box::after a {
     content: "";
-   
-
-
-
-
 } 
-
 /*end feature*/
+/*start testimonalise*/
 
+.testimonials {
+padding-top: var(--mainpaddingtop) ;
+padding-bottom: var(--mainpaddingbottom);
+position: relative;
+background-color: #e6e6e7;
+
+}
+
+.testimonials .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.testimonials .box {
+    background-color: white;
+   padding: 20px;
+   box-shadow: 2px 4px rgba(0, 0, 0, 0.009);
+   border-radius: 6px;
+   position: relative;
+   
+}
+
+.testimonials .box img {
+  position: absolute;
+  right: -10px;
+  top: -80px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid #e6e6e7;
+  
+}
+
+.testimonials .box h2 {
+ color: var(--maincolor);
+ 
+}
+
+.testimonials .box .title {
+    margin: 10px;
+    color: #777;
+    font-size: 20px;
+}
+
+.testimonials .box .rate {
+    margin: 10px;
+   
+}
+
+.testimonials .box .filled {
+    color:#ffc107;
+}
+
+.testimonials .box p {
+    color: #777;
+}
+/*end testimonalise*/
 
 /*start animation*/
 @keyframes up-and-down {
