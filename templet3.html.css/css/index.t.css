@@ -515,6 +515,117 @@ background-color: #e6e6e7;
 }
 
 /*end gallery*/
+/*start feature*/
+.features{
+padding-top: var(--mainpaddingtop) ;
+padding-bottom: var(--mainpaddingbottom);
+position: relative;
+background-color: white;
+
+}
+
+.features .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+}
+.features .box {
+   text-align: center;
+   border: 1px solid #ccc;
+}
+.features .box .image-holder {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.features .box .image-holder::before {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.features .box .image-holder::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-style: solid;
+    border-width: 0 0 170px 500px;
+    border-color: transparent transparent white transparent;
+    overflow: hidden;
+    transition: var(--maintransition);
+ 
+ }
+.features .box .image-holder img{
+    max-width: 100%;
+}
+    
+.features .box:hover .image-holder::after{
+    border-width:  170px 500px 170px 0 ;
+    
+
+}
+.features .box h3{
+    position: relative;
+    font-size: 40px;
+    margin: auto;
+    width: fit-content;
+
+
+}
+
+
+.features .box h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    background-color: var(--maincolor);
+    width: 100%;
+  
+
+}
+.features .box p {
+    line-height: 2;
+    font-size: 20px;
+    margin: 30px 0;
+    padding: 25px;
+    color: #777;
+
+
+} 
+
+
+.features .box a {
+   display: block;
+   border: 3px solid var(--maincolor);
+   width: fit-content;
+   margin: 0 auto 30px;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 10px 20px;
+   color: var(--maincolor);
+  
+
+} 
+
+.features .box::after a {
+    content: "";
+   
+
+
+
+
+} 
+
+/*end feature*/
+
+
 /*start animation*/
 @keyframes up-and-down {
     0%, 
