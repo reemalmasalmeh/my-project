@@ -653,6 +653,8 @@ background-color: #e6e6e7;
     margin: 10px;
     color: #777;
     font-size: 20px;
+    display: block;
+   
 }
 
 .testimonials .box .rate {
@@ -666,9 +668,224 @@ background-color: #e6e6e7;
 
 .testimonials .box p {
     color: #777;
+    line-height: 1.5;
 }
 /*end testimonalise*/
 
+/*start team*/
+.team {
+    padding-top: var(--mainpaddingtop) ;
+    padding-bottom: var(--mainpaddingbottom);
+    position: relative;
+    
+}
+.team .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.team .box {
+    position: relative; 
+}
+.team .box::before,
+.team .box::after {
+    content: "";
+    background-color: #f3f3f3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    z-index: -2;
+    transition: var(--maintransition);
+}
+
+.team .box::before {
+    content: "";
+    z-index: -2;
+    width: calc(100% - 60px);
+}
+.team .box::after {
+    content: "";
+    z-index: -1;
+    background-color: #e4e4e4;
+    width: 0;
+}
+.team .box:hover::after {
+    width: calc(100% - 60px);
+}
+.team .box .data img {
+    width: calc(100% - 60px);
+    transition: var(--maintransition);
+    border-radius: 10px;
+}
+.team .box:hover img{
+    filter: grayscale(100%);
+}
+
+.team .box .data {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    
+}
+.team .box .data .social {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.team .box .social a {
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .box .social i {
+    color: #777;
+    transition: var(--maintransition);
+}
+.team .box .data .social a:hover i {
+    color: var(--maincolor);
+    transition: var(--maintransition);
+}
+.team .box .info {
+padding-left: 100px;
+
+}
+
+.team .box .info h3 {
+    margin-bottom: 0;
+    color: var(--maincolor);
+    font-size: 30px;
+}
+.team .box:hover .info h3{
+    color: #777;
+    transition: var(--maincolor);
+}
+.team .box .info p {
+margin-top: 10px;
+margin-bottom: 20px;
+font-size: 22px;
+}
+.team .box:hover .info p{
+    color: #777;
+}
+/*end team*/
+/*start services*/
+
+.services {
+    padding-top: var(--mainpaddingtop) ;
+    padding-bottom: var(--mainpaddingbottom);
+    position: relative;
+    background-color: #e6e6e7;
+    
+    }
+    
+    .services .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 40px;
+    }
+    .services .box {
+        background-color: white;
+        padding: 20px;
+        box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.009), 0px 2px 4px 0 rgba(0, 0, 0, 0.009);
+        counter-increment: services;
+        transition: var(--maintransition);
+        position: relative;
+    }
+    .services .box::before{
+        content: "";
+        left: 50%;
+        transform: translateX(-50%);
+        height: 3px;
+        top: -3px;
+        background-color: var(--maincolor);
+        position: absolute;
+        width: 0;
+        transition: var(--maintransition);
+    }
+    .services .box:hover {
+        transform: translateY(-10PX);
+    }
+    
+    .services .box:hover::before {
+    width: 100%;
+    }
+
+
+    .services .box > h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        color: var(--maincolor);
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .services .box > i {
+        margin: 40px auto 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #d5d5d5;
+    }
+    .services .box .info {
+        padding: 15px;
+        position: relative;
+        background-color: #f9f9f9;
+        text-align: right;
+       
+   
+
+    }
+    .services .box .info::before {
+        content: "0" counter(services);
+        position: absolute;
+        display: flex;
+        text-align: left;
+        color: white;
+        background-color: var(--maincolor);
+        width: 80px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        font-size: 30px;
+    }
+   
+    .services .box .info::after {
+        content: "";
+        background-color: #D5D5D5;
+        position: absolute;
+        top: 0;
+        left: 70px;
+        width: 50px;
+        height: calc(100% + 0.2px);
+        transform: skewX(-20deg);
+        
+
+
+
+    }
+    .services .box .info a {
+     color: var(--maincolor);
+    }
+
+/*end services*/
+/*start skills*/
+
+
+
+
+/*end skills*/
 /*start animation*/
 @keyframes up-and-down {
     0%, 
