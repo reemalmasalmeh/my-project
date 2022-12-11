@@ -1405,14 +1405,88 @@ background-color: #ececec;
    font-weight: bold;
 
   }
-
-
-
 .pricing .box a:hover {
     background-color: #2287d8;
     color: white;
     font-weight: bold;
-   
-    
 }
 /*end pricing*/
+/*start videoes*/
+
+.videos {
+    padding-top: var(--mainpaddingtop);
+    padding-bottom: var(--mainpaddingbottom);
+   
+}
+
+@media (max-width: 991px) {
+    .videos .holder {
+      flex-direction: column;
+    }
+  }
+
+.videos .holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+    border: 1px solid #ddd;
+    
+}
+
+.videos .holder .list {
+   min-width: 300px;
+  background-color: white;
+}
+
+
+.videos .holder .list .name {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f4f4;
+    padding: 20px;
+   
+   
+}
+
+.videos .holder .list ul li {
+    padding: 20px;
+    border-top: 1px solid #ccc;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+.videos .holder .list ul li:hover {
+    color: #fafafa;
+    color: var(--maincolor);
+
+}
+
+
+.videos .holder .list ul li span {
+   color: #777;
+   display: flex;
+   justify-content: space-between;
+   
+}
+.videos .preview {
+    background-color: #e2e2e2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+   
+}
+
+.videos .holder .preview img {
+    width: 100%;
+}
+
+.videos .holder .preview .info {
+    padding: 20px;
+    background-color: white;
+    margin-top: 10px;
+
+    
+}
+/*end videoes*/
