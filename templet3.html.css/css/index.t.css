@@ -1703,3 +1703,127 @@ background-color: #ececec;
 }
 
 /*end discount*/
+/*end footer*/
+.footer {
+    background-color: #191919;
+    padding: 80 0 0;
+    
+
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+
+}
+.footer .box h3 {
+    font-weight: bold;
+    color: white;
+    font-size: 50px;
+    margin: 0 0 20px;
+
+
+}
+
+.footer .box .social {
+    display: flex;
+    
+}
+.footer .box .social li {
+    margin: 10px;
+    
+}
+
+.footer .box .social li a {
+    background-color: #313131;
+    color: #898989;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    transition: var(--main-transition);
+    
+}
+.footer .box .social .facebook:hover {
+    background-color: #1877f2;
+}
+
+.footer .box .social .twitter:hover {
+    background-color: #1da1f2;
+}
+
+.footer .box .social .youtube:hover {
+    background-color: #ff0000;
+}
+.footer {
+    line-height: 2;
+    color: #b9b9b9;
+}
+.footer .box  .links li {
+    padding: 15px 0;
+    transition: var(--main-transition);
+    
+
+}
+
+.footer .box .links li:not(:last-child) {
+    border-bottom: 1px solid #444;
+    
+}
+
+.footer .box .links li:hover {
+    padding-left: 10px;
+
+}
+
+.footer .box .links li:hover a {
+    color: white;
+
+}
+
+.footer .box  .links li a {
+    color: #b9b9b9;
+    transition: var(--main-transition);
+}
+
+.footer .box  .links li a::before {
+   content: "# ";
+   font-weight: 900;
+   margin-right: 10px;
+   color: var(--maincolor);
+}
+.footer .box .line {
+    display: flex;
+    align-items: center;
+    color: #898989;
+    margin-bottom:10px ;
+}
+
+@media (max-width: 767px) {
+    .footer .box .line {
+      flex-direction: column;
+    }
+  }
+.footer .box .line .info span {
+    display: block;
+}
+.footer .box .line i {
+    color: var(--maincolor);
+    font-size: 25px;
+    margin-right: 10px;
+}
+.footer .footer-gallery img {
+    width: 78px;
+    border: 3px solid white;
+}
+.footer .copyright {
+    padding: 25px 0;
+    text-align: center;
+    color: white;
+    margin: 50px 0 0;
+    border-top: 1px solid #444;
+}
+
+
+/*end footer*/
