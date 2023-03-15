@@ -1,7 +1,7 @@
 
 
 window.onload = function () {
-    assignment_1.querySelector("h1").style.color = "Blue" ;
+    document1.querySelector("h1").style.color = "Blue" ;
     };
 
     // single comment
